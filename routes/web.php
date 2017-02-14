@@ -22,6 +22,10 @@ Route::get('/ola', function(){
 });
 
 
+// rota para os cursos
 Route::get('/cursos', 'CursosController@index');
-
 Route::get('/cursos/{index}','CursosController@show');
+
+// rotas para os produtos
+Route::get('/produtos', 'ProdutosController@index');
+Route::get('/produtos/{index}','ProdutosController@show');
