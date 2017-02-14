@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cursos</title>
-    <link rel="stylesheet" type="text/css" href="/css/app.css" />
-  </head>
-  <body>
+@extends('layout')
+@section('content')
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+  <div class="row">
+    <div class="col-md-6">
 
-          <h1>Cursos</h1>
+      <h3>Cursos</h3>
 
           <ul class="list-group">
             @foreach ($cursos as $curso)
@@ -21,7 +14,4 @@
 
         </div>
       </div>
-    </div>
-    <script type="text/javascript" src="/js/app.js" >
-  </body>
-</html>
+@endsection
